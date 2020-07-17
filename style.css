@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+
+}
+
+
+button {
+    font-size: 35px;
+    border: 1px solid rgb(168, 168, 168);
+    background-color: white;
+    transition: all .1s;
+}
+
+button:active {
+    outline: none;
+
+    background-color: rgb(248, 248, 248);
+}
+
+button:focus {
+    outline: none;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: lightblue;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.calculator {
+    width: 600px;
+    height: 700px;
+    border: none;
+    margin: 100px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: [display] 160px [keys] 500px;
+
+
+}
+
+.display {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    /* justify-items: center; */
+    align-items: center;
+
+
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+
+}
+
+
+.opirator {
+    background-color: lightgray;
+    
+
+}
+
+
+.num {
+    background-color: white;
+
+
+}
+
+
+.keys {
+
+    display: grid;
+
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+#op-equal {
+    grid-row: 2 / -1;
+    grid-column: 4 / -1;
+    background-color: lightsalmon;
+}
+
+
+
+
+
+
+
+
